@@ -1,0 +1,48 @@
+@import "../../VariablesAndMixins.scss";
+
+.header {    
+    height: 5.625rem;
+    box-shadow: $shadow2;
+    padding: 0 5.625rem 0 1.875rem;
+    background: $black-color ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $white-color;
+    @include tablet-view {
+        position: fixed;
+        z-index: 5;
+    }
+
+    &__nav {
+        width: 77.5rem;
+        height: 100%;
+        background: $black-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include tablet-view {
+            width: 90vw;
+        }
+
+        &__logo {
+            width: 11.125rem;
+            @include tablet-view {
+                width: 9rem;
+            }
+
+        }
+
+        &__link {
+            color: $white-color;
+            text-decoration: none;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            @include tablet-view {
+                font-size: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import "../../VariablesAndMixins.scss";
+
+.barChartCtnr{
+position: relative;
+height: 20rem;
+box-shadow: $shadow1;
+border-radius: $borderRadius-small;
+padding: 1.25rem;
+background-color:$lightGrey-color;
+
+&__title {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: 0.94rem;
+    font-weight: 500;
+}
+
+
+.recharts-legend-item-text{
+    padding: 0 0.5rem 0 0.188rem;
+    color: $black-color !important;
+    font-size: 0.85rem;
+}
+
+}
+
+.activityChartTooltip{
+    width: 4.375rem;
+    height: 6.25;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $red-color;
+
+    color: $white-color;
+    line-height: 2.5rem;
+    font-size: 0.5rem;
+    font-weight: 500;
+
+}

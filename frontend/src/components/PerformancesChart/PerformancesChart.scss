@@ -1,0 +1,20 @@
+@import '../../VariablesAndMixins.scss';
+
+
+.recharts-text.recharts-polar-angle-axis-tick-value{
+    text-transform: capitalize;
+    stroke:$white-color;
+}
+
+.radarContainer { 
+    position: relative;
+    box-shadow: $shadow1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 258px;
+    min-width: 258px;
+    border-radius: 5px;
+    background:#282D30;
+}
+

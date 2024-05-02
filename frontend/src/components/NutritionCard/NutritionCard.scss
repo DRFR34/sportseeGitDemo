@@ -1,0 +1,41 @@
+@import "../../VariablesAndMixins.scss";
+
+.nutriCard {
+    box-shadow: $shadow1;
+    border-radius: $borderRadius-small;
+    padding: 2rem 2.75rem 2rem 2rem;
+    display: flex;
+    gap: 2rem;
+    background-color: $lightGrey-color;
+    // background-color: lightblue;
+
+    @include tablet-view {
+        padding: 1rem;  
+    }
+
+    &__IconBox,
+    &__IconBox img {
+        @include isSquare(3.75rem);
+    }
+
+    &__textsBox {
+        // padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 14px;
+         
+        & span {
+            padding: 2px 0;
+        }
+
+        &__count {
+            font-weight: 700;
+            font-size: 1.25rem;
+           @include tablet-view {
+                font-size: 0.938rem;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+@import "../../VariablesAndMixins.scss";
+
+.sideBar {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 7.313rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $black-color;
+
+    &__nav {
+        display: flex;
+        transform: translateY(-2.8rem);
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;    
+        @include tablet-view{
+            position: fixed;
+            top: 50vh;
+            transform: translateY(-50%);
+        }    
+    }
+
+    &__footer {
+        position: absolute;
+        transform: rotate(-90deg) translateX(80%) translateY(0%) ;
+        bottom: 0;
+
+        &__copyright {
+            
+            font-size: 0.75rem;
+            color: $white-color;
+            text-wrap: nowrap;
+        }
+    }
+}

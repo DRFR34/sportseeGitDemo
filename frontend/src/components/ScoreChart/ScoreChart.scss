@@ -1,0 +1,58 @@
+@import "../../VariablesAndMixins.scss";
+
+
+.scoreChart {
+    position: relative;
+    @include isSquare (16.438rem);
+    box-shadow: $shadow1;
+    border-radius: $borderRadius-small;
+    display: flex;
+    flex-direction: column;
+    background-color: $lightGrey-color;
+
+    &__title {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        color: $darkGrey-color;
+        font-size: 0.938rem;
+        font-weight: 500;
+    }
+
+    &__RespCntnr {
+        @include isCentered;
+    }
+
+    &__label {
+        @include isCentered;
+        display: flex;
+        flex-direction: column;
+        color: $darkGrey-color;
+        font-weight: 700;
+        line-height: 1.625rem;
+        text-align: center;
+
+        &__title {
+            font-size: 1.625rem;
+        }
+
+        & span {
+            color: $darkGrey-color;
+        }
+    }
+
+
+
+}
+
+
+.scoreChart__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+
+
+}

@@ -1,0 +1,38 @@
+@import '../../VariablesAndMixins.scss';
+
+.switchBtnBox{
+    position: relative;
+    cursor: pointer;
+    width: 5.2rem;
+    height: 3rem;
+    box-shadow: $shadow-inner2;
+    border-radius: 2rem;
+    background-color: $lightGrey-color;
+    
+
+    &__switchBtn{
+        position: absolute;
+        top : 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 2rem;
+        padding:  0.5rem;
+        color: $white-color;
+        text-align: center;
+        
+        &--serverOn{
+            left: 0;
+            background-color: $green-color;
+            font-size: 1.5rem;
+            
+        }
+
+        &--serverOff{
+            right: 0;
+            background-color: $red-color;
+            font-size: 1.5rem;
+        }
+    }
+}

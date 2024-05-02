@@ -1,0 +1,32 @@
+@import '../../VariablesAndMixins.scss';
+
+.sessionsChartContainer {
+    position: relative;
+    @include isSquare(16.438rem);
+    box-shadow: $shadow1;
+    border-radius: $borderRadius-small;
+    display: flex;
+    flex-direction: column;
+    background-color: $red-color;
+
+    &__title {
+        position: absolute;
+        margin: 1.625rem 0 0 1.625rem;
+        width: 9.188rem;
+        opacity: 0.5;
+        color: $white-color;
+        font-size: 0.938rem;
+    }
+
+    &__responsive {
+        margin: 0 auto;
+    }
+
+    .sessionsChartTooltip {
+        padding: 0.738rem;
+        background-color: $white-color;
+        font-size: 0.5rem;
+    }
+}
+
+

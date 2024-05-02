@@ -1,0 +1,39 @@
+//== Variables ==
+
+$red-color : #E60000;
+$darkRed-color : #720303;
+$white-color: #ffffff;
+$black-color : #020203;
+$lightGrey-color: #fbfbfb;
+$lightGrey2-color: #f8f8f8;
+$mediumGrey-color: #C4C4C4;
+$darkGrey-color: #282D30;
+$green-color: #038977;
+
+$shadow1 : rgba(0, 0, 0, 0.05) 0px 3px 4px;
+$shadow2: rgba(50, 50, 93, 0.25) 0px 10px 10px -5px, rgba(0, 0, 0, 0.3) 0px 8px 6px -8px;
+$shadow-inner1: rgba(0, 0, 0, 0.07) 6px 6px 6px 10px inset;
+$shadow-inner2: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+$borderRadius-small: 5px;
+
+//== Mixins ==
+
+@mixin isCentered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin isSquare ($size) {
+    height: $size;
+    width: $size;
+
+}
+
+@mixin tablet-view {
+    @media screen and (max-width: 1220px) {
+        @content;
+    }
+}
