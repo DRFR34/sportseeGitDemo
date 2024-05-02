@@ -1,0 +1,76 @@
+@import "../../VariablesAndMixins.scss";
+
+.homeHeader {
+    margin: 8rem auto 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+
+    @include tablet-view {
+        margin: 12rem auto 0; ;
+    }
+
+    &__title {
+        color: $darkGrey-color;
+        font-weight: 500;
+    }
+
+}
+
+.homeSubtitle {
+    color: $darkGrey-color;
+    line-height: 4rem;
+    font-weight: 500;
+}
+
+.usersCtnr,
+.switchBtnCtnr {
+    padding: 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 1.5rem;
+
+    &__usersUl {
+
+        padding: 0 2.5rem;
+        display: flex;
+        gap: 1.875rem;
+        list-style: none;
+
+        li .userLink {
+            box-shadow: $shadow1;
+            display: flex;
+            justify-content: flex-start;
+            gap: 0.625rem;
+            width: 12.5rem;
+            height: 5rem;
+            border-radius: 0.625rem;
+            padding: 0.625rem 1.875rem;
+            background-color: $lightGrey2-color;
+            text-decoration: none;
+            line-height: 3.75rem;
+            font-size: 1.875rem;
+            color: $darkGrey-color;
+
+            &:hover {
+                transform: scale(1.2);
+                box-shadow: $shadow2;
+            }
+
+        }
+    }
+}
+
+.gitPageInfoBox{
+    border: solid 1px $red-color;
+    padding: 0 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+
+    & p{
+        line-height: 1.5rem;
+        text-align: justify;
+    }
+}
