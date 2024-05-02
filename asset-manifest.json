@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sportseeGitDemo/static/css/main.75e29440.css",
+    "main.js": "/sportseeGitDemo/static/js/main.cf144c99.js",
+    "static/media/Karl.png": "/sportseeGitDemo/static/media/Karl.3d6e1db9639706a3e49c.png",
+    "static/media/Cecilia.png": "/sportseeGitDemo/static/media/Cecilia.441ef4bc6c6d771fc73a.png",
+    "static/media/logo.png": "/sportseeGitDemo/static/media/logo.f6a481714db47ccd3051.png",
+    "index.html": "/sportseeGitDemo/index.html",
+    "main.75e29440.css.map": "/sportseeGitDemo/static/css/main.75e29440.css.map",
+    "main.cf144c99.js.map": "/sportseeGitDemo/static/js/main.cf144c99.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75e29440.css",
+    "static/js/main.cf144c99.js"
+  ]
+}
